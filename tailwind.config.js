@@ -8,8 +8,13 @@ export default {
     "./resources/**/*.js",
   ],
   theme: {
-    extend: {},
-  },
+        extend: {
+            fontFamily: {
+              Fuente1 : ["MsMadi - regular", "sans-serif"],
+              Fuente2 : ["Quicksand-VariableFont", "sans-serif"],
+            },
+        },
+    },
   plugins: [],
 }
 

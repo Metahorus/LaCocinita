@@ -4,29 +4,29 @@
 
 <div class="TextosLegalesContenedor">
     <div class="TextosLegalesTarjeta">
-        <h1>{{ __('Cookies.Coo_01') }}</h1>
-        <h2>{{-- NOMBRE DE LA WEB --}}</h2>
+        <h1>{{ __('cookies.Coo_01') }}</h1>
+        <h2>La Cocinita</h2>
         
-        <p>{{ __('Cookies.Coo_02') }}
+        <p>{{ __('cookies.Coo_02') }}
             <br><br>
-            {{ __('Cookies.Coo_03') }}
+            {{ __('cookies.Coo_03') }}
             
             <br><br>
-            {{ __('Cookies.Coo_04') }}
+            {{ __('cookies.Coo_04') }}
             
             <br><br>
-            {{ __('Cookies.Coo_05') }}
+            {{ __('cookies.Coo_05') }}
             
         </p>
         <br>
 
-        <h3>{{ __('Cookies.Coo_06') }}</h3>
-        <p>{{ __('Cookies.Coo_07') }}
+        <h3>{{ __('cookies.Coo_06') }}</h3>
+        <p>{{ __('cookies.Coo_07') }}
         </p>
         <br>
         
-        <h3>{{ __('Cookies.Coo_13') }}</h3>
-        <p>{{ __('Cookies.Coo_14') }}
+        <h3>{{ __('cookies.Coo_13') }}</h3>
+        <p>{{ __('cookies.Coo_14') }}
             
         </p>
     </div>

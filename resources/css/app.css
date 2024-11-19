@@ -19,20 +19,31 @@
 }
 
 /* -------------------- Fuentes -------------------- */
-/*TODO ---------- Ejemplo ---------- */
 
-/* tailwind.config.js -> añadir fuentes */
-
-/*  -- The Suavity -- 
 @font-face { 
-    font-family: "thesuavity";
-    src: url("./../../public/fonts/TheSuavity.ttf");
-} */
+    font-family: "Fuente1";
+    src: url("./../../public/fuentes/MsMadi-Regular.ttf");
+} 
+@font-face { 
+    font-family: "Fuente2";
+    src: url("./../../public/fuentes/Quicksand-VariableFont_wght.ttf");
+} 
 
 /* -------------------- Colores -------------------- */
 
 :root {
     --Negro: #000000;
+    --Gris: #343632;
+    --Blanco: #fff;
+    --Verde1: #7ad16a;
+    --Verde2: #61BB51;
+    --Verde3: #53a345;
+    --Amarillo1: #ffd747;
+    --Amarillo2: #FFC800;
+    --Amarillo3: #f1bd00;
+    --Naranja1: #fa8e3c;
+    --Naranja2: #FF8427;
+    --Naranja3: #ff770e;
 }
 
 /* -------------------- Común -------------------- */
@@ -53,104 +64,87 @@ html {
     outline:none
 }
 
-/*TODO ---------- Modificar ---------- */
-/* a, a:hover, a:focus, a:active {
-    font-family: "";
+a, a:hover, a:focus, a:active {
     font-weight: 600;
 	text-decoration: none;
 	color: inherit; 
-} */
+}
 
 a {
 	transition: 0.3s all ease;
 }
 
-/*TODO ---------- Modificar ---------- */
+a:hover, a:focus, a:active {
+	color: var(--Verde3);
+}
 
-/* a:hover, a:focus, a:active {
-	color: ;
-} */
+body {
+    background-color: var(--Blanco);
+}
 
-/* body {
-    background-color: ;
-} */
-
-/* input[type="checkbox"]:checked {
+input[type="checkbox"]:checked {
     background-color: var(--) !important;
-} */
+}
 
 /* -------------------- Tipografía -------------------- */
 
-/*TODO ---------- Modificar ---------- */
-
-h1 {
-    /* font-family: ""; */ 
-    color: var(--Negro);
-}
-
-h2, h3, h4, h5, h6 {
-    /* font-family: ""; */ 
-    font-weight: 600;
-}
-
 h2 {
-    font-size: calc(1rem + .5vw);
+    font-size: larger;
 }
 
 h3, h4, h5 {
-    font-size: calc(.9rem + .4vw);
+    font-size: large;
+    font-weight: 500;
 }
 
 p {
-    /* font-family: ""; */ 
-    font-size: calc(.7rem + .4vw);
+    font-family: "Fuente2"; 
+    font-size: medium;
 }
 
 /* -------------------- Textos legales -------------------- */
 .TextosLegalesContenedor {
-    background-color: #fff;
+    background-image: url(/public/imagenes/fondos/TextosLegales.webp);
+    background-repeat: repeat; 
 }
 
 .TextosLegalesTarjeta {
     width: 100%;
-    padding: calc(1rem + 3vw);
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-color: #fff; /*TODO ---------- Modificar ---------- */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 120px clamp(1rem, calc(2rem + 1vw), 3rem); /* !! margen superior */
+    font-family: "Fuente2";
 }
 
 .TextosLegalesTarjeta h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-
-    padding-bottom: 1rem;
-
     font-size: x-large;
+    font-weight: 600;
+    color: var(--Verde2);
 }
 
 .TextosLegalesTarjeta h2 {
     display: flex;
     justify-content: center;
     text-align: center;
-
     padding-bottom: 2rem;
-
     font-size: x-large;
+    font-weight: 800;
+    color: var(--Verde3);
 }
 
 .TextosLegalesTarjeta h3 {
     padding: 1rem 0 .8rem 1rem;
-
     font-size: larger;
+    color: var(--Verde2);
 }
 
 .TextosLegalesTarjeta h4 {
     padding: 0 0 .8rem 1.5rem;
-
     font-size: large;
+    color: var(--Verde3);
 }
 
 .TextosLegalesTarjeta p {
@@ -163,7 +157,6 @@ p {
 
 .TextosLegalesTarjeta ul li {
     padding: .5rem 0 0 .5rem;
-
     font-size: medium;
     list-style: circle;
     list-style-position: inside;

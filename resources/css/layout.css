@@ -2,6 +2,17 @@
 
 :root {
     --Negro: #000000;
+    --Gris: #343632;
+    --Blanco: #fff;
+    --Verde1: #7ad16a;
+    --Verde2: #61BB51;
+    --Verde3: #53a345;
+    --Amarillo1: #ffd747;
+    --Amarillo2: #FFC800;
+    --Amarillo3: #f1bd00;
+    --Naranja1: #fa8e3c;
+    --Naranja2: #FF8427;
+    --Naranja3: #ff770e;
 }
 
 /* -------------------- Aviso cookies -------------------- */
@@ -249,15 +260,13 @@
 
 /* -------------------- Contenido -------------------- */
 
-.Contenido {
+/* .Contenido {
 	width: 100%;
 	max-width: 1400px;
 
 	margin: auto;
 	padding: 2rem clamp(1rem, calc(2rem + 1vw), 3rem);
-
-	/* background-color: brown; */
-}
+} */
 
 /* -------------------- Footer -------------------- */
 
