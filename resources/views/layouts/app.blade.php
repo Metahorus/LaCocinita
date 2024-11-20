@@ -14,33 +14,33 @@
   @livewireStyles
 
   <!-- Título -->
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>La Cocinita</title>
 
   <!-- Metadescripcion -->
-  <meta name="description" content=""> <!-- 130-160 caracteres -->
+  <meta name="description" content="Descubre nuestros productos artesanales: mermeladas, mojos, zumos y más. Elaborados con ingredientes frescos en el sur de Tenerife.">
 
   <!-- Keywords -->
-  <meta name="keywords" content="...">
+  <meta name="keywords" content="Productos artesanales Tenerife, Mermeladas naturales, Mojos caseros, Salsas artesanales, Zumos naturales, Concentrados de frutas, Pellas de gofio Tenerife, Ingredientes frescos">
 
   <!-- Versión canónica -->
-  <link rel="canonical" href=""> <!-- Indica la URL canónica de la página web -->
+  <link rel="canonical" href="https://www.la-cocinita.com/">
 
   <!-- Robots -->
-  <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar y seguir la página web  -->
+  <meta name="robots" content="index, follow"> 
 
   <!-- Favicon -->
-  <link rel="icon" href=""> <!-- Ruta de la imagen - .ico, .svg, .png - 32px x 32px -->
+  <link rel="icon" href="/imagenes/otros/favicon.ico"> 
 
   <!-- Autor -->
   <meta name="author" content="Metahorus">
 
   <!-- Título - Redes -->
-  <meta name="og:title" content="..."> <!-- Define el título de la página web para Facebook -->
-  <meta name="twitter:title" content="..."> <!-- Define el título de la página web para Twitter -->
+  <meta name="og:title" content="La Cocinita. Mermeladas y mojos"> 
+  <meta name="twitter:title" content="La Cocinita. Mermeladas y mojos"> 
 
   <!-- Descripción - Redes -->
-  <meta name="og:description" content="..."> <!-- Define la descripción de la página web para Facebook -->
-  <meta name="twitter:description" content="..."> <!-- Define la descripción de la página web para Twitter -->
+  <meta name="og:description" content="Descubre nuestros productos artesanales: mermeladas, mojos, zumos y más. Elaborados con ingredientes frescos en el sur de Tenerife."> 
+  <meta name="twitter:description" content="Descubre nuestros productos artesanales: mermeladas, mojos, zumos y más. Elaborados con ingredientes frescos en el sur de Tenerife."> 
 
 </head>
 
@@ -53,12 +53,11 @@
     <nav x-cloak class="NavBar" x-data="{ open: false }"> 
       
       {{-- -------- NavBar Movil -------- --}}
-
-      {{-- Dropdown tipo overlay --}}
       <div class="NavBarMovil">
-        <a href="">
+        <a href="{{ route('home') }}">
           <h1 class="NavBarMovilLogo">
-            <img src="{{-- {{ asset('/') }} --}}" x-show="open" alt="">
+            <img src="{{ asset('imagenes/otros/LaCocinita.Gris.webp') }}" x-show="!open" alt="Enlace a inicio">
+            <img src="{{ asset('imagenes/otros/LaCocinita.Gris.webp') }}" x-show="open" alt="Enlace a inicio">
           </h1>
         </a>
 

@@ -5,7 +5,7 @@
             <div class="TarjetaCookie" x-show="show">
                 <div>
                     <div class="TarjetaCookieTitulo">
-                        <img src="" alt="">
+                        <i class="fi fi-ss-cookie-alt"></i>
                         <h2>{{ __('Aviso de cookies') }}</h2>
                     </div>
         
