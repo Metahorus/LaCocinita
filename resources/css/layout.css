@@ -81,6 +81,14 @@
     background-color: var(--Verde3);
 }
 
+.NavBarMovilIdiomasContenido {
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
 
 /* -------------------- Barra de navegacion -------------------- */ 
 
@@ -99,12 +107,12 @@
 	z-index: 100;
 
 	width: 100%;
-	padding: 20px;
+	padding: 20px 30px;
 }
 
 .NavBarMovilLogo img {
     display: block;
-	width: calc(100px + 1vw);
+	width: calc(120px + 1vw);
 }
 
 .NavBarMovil button {
@@ -112,8 +120,9 @@
     justify-content: right;
 }
 
-.NavBarMovil button img {
-	width: 30px;
+.NavBarMovil button i {
+	font-size: xx-large;
+    color: var(--Gris);
 }
 
 .NavBarOverlay {
@@ -125,42 +134,38 @@
     width: 100%;
     height: fit-content;
 
-    padding: 120px calc(1rem + 10vw) 2rem;
-    padding-top: 120px;
-    background-color:  #fff;
+    padding: 90px calc(1rem + 5vw) 2rem;
+
+    border-radius: 15px;
+	background-color: #ffffffb4;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 15px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .NavBarOverlay h2 {
-    font-size: larger;
-    font-weight: 500;
+    font-size: large;
+    font-weight: 600;
+    color: var(--Gris);
 }
 
 .NavBarOverlay h3 {
     padding-left: 1rem;
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
+    color: var(--Gris);
 }
-
-.NavBarMovilContacto {
-    width: fit-content;
-    margin: .5rem 0;
-    padding: .3rem .5rem;
-    border-radius: 10px;
-}
-
 
 .NavBarMovilIdiomas {
     display: flex;
     flex-direction: row;
     gap: 5px;
 
-    padding-top: 1rem;
+    padding-top: .7rem;
 }
 
-.NavBarMovilIdiomas img {
-    width: 10px;
-    padding-top: 1rem;
-    object-fit: contain;
+.NavBarMovilIdiomas i {
+    padding-top: .3rem;
+    font-size: large;
 }
 /* -------------------- NavBarPc -------------------- */
 
@@ -173,18 +178,28 @@
         position: absolute;
         top: 0;
 
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1.5fr 8.5fr;
         align-items: center;
         
         z-index: 100;
 
         width: 100%;
-        padding: 20px 30px;
+        padding: 20px calc(30px + 1vw);
     }
 
     .NavBarPcLogo {
         width: calc(120px + 1vw);
+    }
+
+    .NavBarPcGridA {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-self: right;
+        gap: calc(10px + 1vw);
+
+        padding-top: .5rem;
     }
 
     .NavBarPcEnlaces {
@@ -192,16 +207,15 @@
         flex-direction: row;
         justify-content: left;
         gap: clamp(4px, calc(4px + 1vw), 20px);
-
-        padding:  0 .5rem;
     }
 
-    .NavBarPcEnlaces h2 {
+    .NavBarPcEnlaces h2, .NavBarPcGridA a h2 {
         font-size: larger;
-        font-weight: 500;
+        font-weight: 600;
+        color: var(--Gris);
     }
 
-    .NavBarPcEnlaces h2:hover {
+    .NavBarPcEnlaces h2:hover, .NavBarPcGridA a h2 {
         font-weight: 600;
     }
 
@@ -210,11 +224,11 @@
         flex-direction: row;
     }
 
-    .NavBarPcEnlaces button img {
-        width: 13px;
+    .NavBarPcEnlaces button i {
         margin-left: .4rem;
         padding-top: 1rem;
-        object-fit: contain;
+        font-size: large;
+        color: var(--Gris);
     }
 
     .NavBarPcOverlay {
@@ -223,23 +237,26 @@
 
         margin-top: 2.5rem;
 
-        width: 280px;
+        width: fit-content;
         height: fit-content;
 
         padding: 1rem 1.5rem 1rem;
 
-        background-color:  #fff;
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        background-color: #ffffffb4;
+        backdrop-filter: blur(5px);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
-    .NavBarPcOverlay h3 {
-        font-weight: 400;
+    .NavBarPcOverlay a h3, .NavBarPcOverlay form button h3 {
+        font-weight: 600;
     }
 
-    .NavBarPcOverlay h3:hover {
+    .NavBarPcOverlay a h4 {
+        padding-left: .5rem;
         font-weight: 500;
     }
+
 
     .NavBarPcIdiomas {
         margin-left: auto;
@@ -247,12 +264,8 @@
 
     .NavBarPcOverlayIdiomas {
         width: 120px;
-    }
 
-    .BtnContacto {
-        padding: .2rem 1.5rem;
-
-        border-radius: 10px;
+        right: 10px;
     }
 }
 
@@ -261,47 +274,137 @@
         gap: calc(10px + 2vw);
     }
 
-    .NavBarPcEnlaces h2 {
-        font-size: x-large;
-    }
-
     .NavBarPcOverlay {
         margin-top: 3rem;
+    }
+
+    .NavBarPcEnlaces h2, .NavBarPcGridA a h2 {
+        font-size: x-large;
     }
 }
 
 /* -------------------- Contenido -------------------- */
 
-/* .Contenido {
-	width: 100%;
-	max-width: 1400px;
+.Contenido > * {
+	padding-top: 95px;
+    padding-bottom: calc(2rem + 2vw);
+}
 
-	margin: auto;
-	padding: 2rem clamp(1rem, calc(2rem + 1vw), 3rem);
-} */
-
+@media only screen and (min-width: 800px) {
+    .Contenido > * {
+        padding-top: 110px;
+    }
+}
 /* -------------------- Footer -------------------- */
+.Footer {
+    background-color: var(--Verde2);
+}
 
+.FooterA {
+    max-width: 1500px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+
+    display: grid;
+}
+
+.FooterA1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    z-index: 0;
+    margin: auto;
+    font-size: xx-large;
+    color: var(--Blanco);
+}
+
+.FooterA1::before {
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute; 
+    z-index: -1;
+
+    background: var(--Verde2);
+    height: 101%;
+    left: -15px;
+    right: -15px;
+}
+
+.FooterA1::after {
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;  
+
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    z-index: -2;
+
+    background: var(--Blanco);
+    height: 3px;
+}
+
+.FooterA2 {
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
+
+.FooterA2 img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.FooterB {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 1.5rem 0 1rem;
+
+    color: var(--Gris);
+}
+
+.FooterB1 {
+    flex: 1 1 15rem;
+}
+
+.FooterB1 h3 {
+    font-weight: 700;
+}
+
+.FooterB1 a h3 {
+    font-weight: 600;
+}
+
+.FooterB1 a:hover h4, .FooterB1 a:hover h3 {
+    color: var(--Amarillo2);
+}
 
 .FooterMetahorus {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .FooterMetahorus h5 {
     font-size: x-small;
     font-weight: 400;
+    color: var(--Blanco);
 }
 
 .FooterMetahorus h5 a {
-    color: #0fa1bd;
+    color: var(--Amarillo1);
     font-size: x-small;
     font-weight: 600;
-}
-
-.FooterMetahorus h5 a:hover {
-    color: #0a6b7e !important;
 }

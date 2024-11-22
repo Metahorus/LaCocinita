@@ -62,25 +62,34 @@
         </a>
 
         <button @click="open = ! open">
-          <img src="{{-- {{ asset('/') }} --}}" x-show="!open" alt="Abrir menú" class="">
-          <img src="{{-- {{ asset('/') }} --}}" x-show="open" alt="Cerrar menú" class="">
+          <i class="fi fi-sr-apps" x-show="!open" alt="Abrir menú"></i>
+          <i class="fi fi-rr-apps" x-show="open" alt="Cerrar menú"></i>
         </button>
       </div>
 
       <div x-show="open" @click.outside="open = false" class="NavBarOverlay">        
-        <h2>{{-- {{ __('') }} --}}</h2>
-          <a href="{{-- {{ route('') }} --}}"><h3>{{-- {{ __('') }} --}}</h3></a>
+        <a href="{{ route('mermeladas') }}"><h2>{{ __('Mermeladas, zumos y concentrados') }}</h2></a>
+          <a href="{{ route('mermeladas') }}#mermeladas"><h3>{{ __('Mermeladas') }}</h3></a>
+          <a href="{{ route('mermeladas') }}#zumos"><h3>{{ __('Zumos naturales') }}</h3></a>
+          <a href="{{ route('mermeladas') }}#concentrados"><h3>{{ __('Concentrados') }}</h3></a>
 
-        <a href="{{ route('contacto') }}" ><h2>{{ __('Contacto') }}</h2></a>
+        <a href="{{ route('mojos') }}"><h2 class="pt-2">{{ __('Mojos y salsas') }}</h2></a>
+          <a href="{{ route('mojos') }}#mermeladas"><h3>{{ __('Mojos') }}</h3></a>
+          <a href="{{ route('mojos') }}#zumos"><h3>{{ __('Salsas') }}</h3></a>
+
+        <a href="{{ route('gofio') }}"><h2 class="pt-2">{{ __('Pella de gofio') }}</h2></a>
+        <a href="{{ route('pedidos') }}"><h2 class="pt-2">{{ __('Pedidos') }}</h2></a>
+        <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a>
+        <a href="{{ route('contacto') }}"><h2>{{ __('Contacto') }}</h2></a>
 
         <div x-data="{ open: false }">
           <h2 x-on:click="open = ! open" class="NavBarMovilIdiomas">
             {{ __('Elegir idioma') }}
-            <img src="{{-- {{ asset('/') }} --}}" x-show="!open" alt="Elegir idioma">
-            <img src="{{-- {{ asset('/') }} --}}" x-show="open" alt="Cerrar elegir idioma">
+            <i class="fi fi-sr-angle-circle-down" x-show="!open" alt="Elegir idioma"></i>
+            <i class="fi fi-sr-angle-circle-up" x-show="open" alt="Cerrar elegir idioma"></i>
           </h2>
 
-          <div x-show="open">
+          <div x-show="open" class="NavBarMovilIdiomasContenido">
             <form action="{{ route('idioma') }}" method="POST">
               @csrf
               <input type="hidden" name="idioma" value="es">
@@ -94,6 +103,22 @@
               <input type="hidden" name="idioma" value="en">
               <button type="submit">
                 <h3>English</h3>
+              </button>
+            </form>
+
+            <form action="{{ route('idioma') }}" method="POST">
+              @csrf
+              <input type="hidden" name="idioma" value="de">
+              <button type="submit">
+                <h3>Deutsch</h3>
+              </button>
+            </form>
+
+            <form action="{{ route('idioma') }}" method="POST">
+              @csrf
+              <input type="hidden" name="idioma" value="fr">
+              <button type="submit">
+                <h3>Français</h3>
               </button>
             </form>
           </div>
@@ -103,45 +128,86 @@
       {{-- -------- NavBar Pc -------- --}}
 
       <div class="NavBarPc">
-        <div x-data="{ open: false }" class="NavBarPcEnlaces">
-          <button @click="open = ! open">
-            <h2>{{-- {{ __('') }} --}}</h2>
-            <img src="{{-- {{ asset('/') }} --}}" x-show="!open" alt="Ver">
-            <img src="{{-- {{ asset('/') }} --}}" x-show="open" alt="Cerrar">
-          </button>
-          
-          <div x-show="open" @click.outside="open = false" class="NavBarPcOverlay">
-            <a href="{{-- {{ route('') }} --}}"><h3>{{-- {{ __('') }} --}}</h3></a>
+        <a href="{{ route('home') }}">
+          <h1 class="NavBarPcLogo">
+            <img src="{{ asset('imagenes/otros/LaCocinita.Gris.webp') }}" x-show="!open" alt="Enlace a inicio">
+            <img src="{{ asset('imagenes/otros/LaCocinita.Gris.webp') }}" x-show="open" alt="Enlace a inicio">
+          </h1>
+        </a>
+
+        <div class="NavBarPcGridA">
+          <div x-data="{ open: false }" class="NavBarPcEnlaces">
+            <button @click="open = ! open">
+              <h2>{{ __('Productos') }}</h2>
+              <i class="fi fi-sr-caret-down" x-show="!open" alt="Abrir"></i>
+              <i class="fi fi-sr-caret-up" x-show="open" alt="Cerrar"></i>
+            </button>
+            
+            <div x-show="open" @click.outside="open = false" class="NavBarPcOverlay">
+              <a href="{{ route('mermeladas') }}"><h3>{{ __('Mermeladas, zumos y concentrados') }}</h3></a>
+                <a href="{{ route('mermeladas') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mermeladas') }}</h4></a>
+                <a href="{{ route('mermeladas') }}#zumos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Zumos naturales') }}</h4></a>
+                <a href="{{ route('mermeladas') }}#concentrados"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Concentrados') }}</h4></a>
+
+              <a href="{{ route('mojos') }}"><h3 class="pt-2">{{ __('Mojos y salsas') }}</h3></a>
+                <a href="{{ route('mojos') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mojos') }}</h4></a>
+                <a href="{{ route('mojos') }}#zumos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Salsas') }}</h4></a>
+              <a href="{{ route('gofio') }}"><h3 class="pt-2">{{ __('Pella de gofio') }}</h3></a>
+            </div>
           </div>
-        </div>
 
-        <div x-data="{ open: false }" class="NavBarPcEnlaces NavBarPcIdiomas">
-          <button @click="open = ! open">
-            <h2 class="pt-1">@if (app()->getLocale() == 'es')
-              Es
-            @else
-              En
-            @endif</h2>
-            <img src="{{-- {{ asset('/') }} --}}" x-show="!open" alt="Ver idiomas">
-            <img src="{{-- {{ asset('/') }} --}}" x-show="open" alt="Cerrar idiomas">
-          </button>
-          
-          <div x-show="open" @click.outside="open = false" class="NavBarPcOverlay NavBarPcOverlayIdiomas">
-            <form action="{{ route('idioma') }}" method="POST">
-              @csrf
-              <input type="hidden" name="idioma" value="es">
-              <button type="submit">
-                <h3>Español</h3>
-              </button>
-            </form>
+          <a href="{{ route('pedidos') }}"><h2>{{ __('Pedidos') }}</h2></a>
+          <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a>
+          <a href="{{ route('contacto') }}"><h2>{{ __('Contacto') }}</h2></a>
 
-            <form action="{{ route('idioma') }}" method="POST">
-              @csrf
-              <input type="hidden" name="idioma" value="en">
-              <button type="submit">
-                <h3>English</h3>
-              </button>
-            </form>
+          <div x-data="{ open: false }" class="NavBarPcEnlaces NavBarPcIdiomas">
+            <button @click="open = ! open">
+              <h2>@if (app()->getLocale() == 'es')
+                Es
+                @elseif (app()->getLocale() == 'de')
+                De
+                @elseif (app()->getLocale() == 'fr')
+                Fr
+              @else
+                En
+              @endif</h2>
+              <i class="fi fi-sr-caret-down" x-show="!open" alt="Abrir"></i>
+              <i class="fi fi-sr-caret-up" x-show="open" alt="Cerrar"></i>
+            </button>
+            
+            <div x-show="open" @click.outside="open = false" class="NavBarPcOverlay NavBarPcOverlayIdiomas">
+              <form action="{{ route('idioma') }}" method="POST">
+                @csrf
+                <input type="hidden" name="idioma" value="es">
+                <button type="submit">
+                  <h3>Español</h3>
+                </button>
+              </form>
+
+              <form action="{{ route('idioma') }}" method="POST">
+                @csrf
+                <input type="hidden" name="idioma" value="en">
+                <button type="submit">
+                  <h3>English</h3>
+                </button>
+              </form>
+
+              <form action="{{ route('idioma') }}" method="POST">
+                @csrf
+                <input type="hidden" name="idioma" value="de">
+                <button type="submit">
+                  <h3>Deutsch</h3>
+                </button>
+              </form>
+
+              <form action="{{ route('idioma') }}" method="POST">
+                @csrf
+                <input type="hidden" name="idioma" value="fr">
+                <button type="submit">
+                  <h3>Français</h3>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -154,58 +220,72 @@
 
   {{-- ------------------ Footer ------------------ --}}
   <footer>
+    <div class="Footer">
+      <div class="FooterA">
+        <div class="FooterA1">
+          <a href="tel:622902641">
+            <i class="fi fi-rs-circle-phone"></i>
+          </a>
+          <a href="https://wa.me/+34622902641">
+            <i class="fi fi-brands-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/lacocinitamermeladasymojos/">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/luzmateodiaz1409">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+        </div>
+    
+        <div class="FooterA2">
+          <a href="{{ route('home') }}">
+            <img src="{{ asset('imagenes/otros/LaCocinita.Blanco.webp') }}"alt="Enlace a inicio">
+          </a>
+        </div>
 
-    {{-- Enlaces a redes sociales --}}
-    <div>
-      <a href="tel:{{-- ... --}}">
-        <img src="{{-- {{ asset('') }} --}}" alt="Teléfono">
-      </a>
+        <div class="FooterB">
+          {{-- <div class="FooterB1">
+            <h3 class="text-center pb-2">{{ __('Contacto') }}</h3>
+            <a href="tel:622902641"><h4 class="pb-2"><span class="font-semibold">{{ __('Teléfono y whatsapp') }}:</span> 622 90 26 41</h4></a>
+            <a href="mailto:mermeladasymojoslacocinita@gmail.com"><h4 class="pb-2"><span class="font-semibold">{{ __('Correo electronico') }}:</span> mermeladasymojoslacocinita@gmail.com</h4></a>
+            <a href="https://maps.app.goo.gl/PjRcDneoiUqMdoj5A"><h4><span class="font-semibold">{{ __('Direccion') }}:</span> Camino Los Migueles, 1. Buzanada, Arona</h4></a>
+          </div> --}}
 
-      <a href="{{-- https://wa.me/#### --}}">    
-          <img src="{{-- {{ asset('') }} --}}" alt="Whatsapp">
-      </a>
+          <div class="FooterB1">
+            <a href="{{ route('mermeladas') }}"><h3>{{ __('Mermeladas, zumos y concentrados') }}</h3></a>
+                <a href="{{ route('mermeladas') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mermeladas') }}</h4></a>
+                <a href="{{ route('mermeladas') }}#zumos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Zumos naturales') }}</h4></a>
+                <a href="{{ route('mermeladas') }}#concentrados"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Concentrados') }}</h4></a>
+          </div>
 
-      <a href="mailto:{{-- ... --}}">    
-          <img src="{{-- {{ asset('') }} --}}" alt="Correo electrónico">
-      </a>
+          <div class="FooterB1">
+            <a href="{{ route('mojos') }}"><h3>{{ __('Mojos y salsas') }}</h3></a>
+              <a href="{{ route('mojos') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mojos') }}</h4></a>
+              <a href="{{ route('mojos') }}#zumos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Salsas') }}</h4></a>
+            <a href="{{ route('gofio') }}"><h3 class="pt-2">{{ __('Pella de gofio') }}</h3></a>
+          </div>
 
-      <a href="{{-- URL --}}">
-        <img src="{{-- {{ asset('') }} --}}" alt="Facebook">
-      </a>
-
-      <a href="{{-- URL --}}">
-        <img src="{{-- {{ asset('') }} --}}" alt="Instagram">
-      </a>
-
-      <a href="{{-- URL --}}">
-        <img src="{{-- {{ asset('') }} --}}" alt="Tiktok">
-      </a>
-    </div>
-
-
-    {{-- Textos legales --}}
-    <div>
-      <h4>
-        <a href="{{ route('privacidad') }}">{{ __('Privacidad') }}</a>
-      </h4>
-
-      <h4>
-        <a href="{{ route('avisoLegal') }}">{{ __('Aviso Legal') }}</a>
-      </h4>
-
-      <h4>
-        <a href="{{ route('cookies') }}">{{ __('Cookies') }}</a>
-      </h4>
-
-      <h4>
-        <a href="{{ route('creditos') }}">{{ __('Creditos') }}</a>
-      </h4>
-    </div>
-
-    <div class="FooterMetahorus">
-      <h5>Copyright © {{ now()->year }} {{-- Nombre de la página --}} | {{ __('Derechos reservados') }} | {{ __('Desarrollado por') }}
-        <a href="https://metahorus.es/" target="_blank" id="MetaHorus">MetaHorus</a>
-      </h5>
+          <div class="FooterB1">
+            <a href="{{ route('pedidos') }}"><h3>{{ __('Pedidos') }}</h3></a>
+            <a href="{{ route('encargos') }}"><h3>{{ __('Encargos y regalos') }}</h3></a>
+            <a href="{{ route('contacto') }}"><h3>{{ __('Contacto') }}</h3></a>
+          </div>
+          
+          <div class="FooterB1">
+            <a href="{{ route('privacidad') }}"><h4>{{ __('Privacidad') }}</h4></a>    
+            <a href="{{ route('avisoLegal') }}"><h4>{{ __('Aviso Legal') }}</h4></a>    
+            <a href="{{ route('cookies') }}"><h4>{{ __('Cookies') }}</h4></a>    
+            <a href="{{ route('creditos') }}"><h4>{{ __('Creditos') }}</h4></a>
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="FooterMetahorus">
+        <h5>Copyright © {{ now()->year }} La Cocinita | {{ __('Derechos reservados') }} | {{ __('Desarrollado por') }}
+          <a href="https://metahorus.es/" target="_blank" id="MetaHorus">MetaHorus</a>
+        </h5>
+      </div>
     </div>
   </footer>
   @livewireScripts
