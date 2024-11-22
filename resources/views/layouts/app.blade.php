@@ -244,13 +244,7 @@
         </div>
 
         <div class="FooterB">
-          {{-- <div class="FooterB1">
-            <h3 class="text-center pb-2">{{ __('Contacto') }}</h3>
-            <a href="tel:622902641"><h4 class="pb-2"><span class="font-semibold">{{ __('Teléfono y whatsapp') }}:</span> 622 90 26 41</h4></a>
-            <a href="mailto:mermeladasymojoslacocinita@gmail.com"><h4 class="pb-2"><span class="font-semibold">{{ __('Correo electronico') }}:</span> mermeladasymojoslacocinita@gmail.com</h4></a>
-            <a href="https://maps.app.goo.gl/PjRcDneoiUqMdoj5A"><h4><span class="font-semibold">{{ __('Direccion') }}:</span> Camino Los Migueles, 1. Buzanada, Arona</h4></a>
-          </div> --}}
-
+          
           <div class="FooterB1">
             <a href="{{ route('mermeladas') }}"><h3>{{ __('Mermeladas, zumos y concentrados') }}</h3></a>
                 <a href="{{ route('mermeladas') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mermeladas') }}</h4></a>
