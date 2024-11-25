@@ -136,7 +136,7 @@
 
     padding: 90px calc(1rem + 5vw) 2rem;
 
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
 	background-color: #ffffffb4;
     backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 15px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -185,7 +185,12 @@
         z-index: 100;
 
         width: 100%;
-        padding: 20px calc(30px + 1vw);
+        padding: 10px calc(30px + 1vw);
+    }
+
+    .NavBarBlur {
+        background-color: #ffffff56;
+        backdrop-filter: blur(5px);
     }
 
     .NavBarPcLogo {
@@ -288,9 +293,11 @@
 .Contenido > * {
 	padding-top: 95px;
     padding-bottom: calc(2rem + 2vw);
+
+    scroll-margin-top: 1rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) { 
     .Contenido > * {
         padding-top: 110px;
     }

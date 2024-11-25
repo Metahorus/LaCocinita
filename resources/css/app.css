@@ -2,7 +2,8 @@
 
 /* app.css -> Fuentes, colores, tipografía, condiciones básicas del documento */
 @import 'layout.css'; /* CSS navbar y footer */
-@import 'home.css'; /* CSS navbar y footer */
+@import 'home.css'; 
+@import 'productos.css'; 
 
 
 /* -------------------- Flaticon - Uicons -------------------- */

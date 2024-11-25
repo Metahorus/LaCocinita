@@ -1,0 +1,260 @@
+/* -------------------- Colores -------------------- */
+
+:root {
+    --Negro: #000000;
+    --Gris: #343632;
+    --Blanco: #fff;
+    --Verde1: #7ad16a;
+    --Verde2: #61BB51;
+    --Verde3: #53a345;
+    --Amarillo1: #ffd747;
+    --Amarillo2: #FFC800;
+    --Amarillo3: #f1bd00;
+    --Naranja1: #fa8e3c;
+    --Naranja2: #FF8427;
+    --Naranja3: #ff770e;
+}
+
+/* -------------------- General -------------------- */
+
+
+/* -------------------- Cabecera -------------------- */
+
+.ProdA {
+    background-position: 60% ;
+    background-size: cover;
+
+    display: grid;
+    align-items: center;
+
+    height: 60vh;
+    width: 100%;
+    padding: calc(3rem + 2vw);
+}
+
+.ProdA h2 {
+    width: 100%;
+    max-width: 800px;
+    font-family: "Fuente1";
+    font-size: calc(3.5rem + 1.5vw);
+    font-weight: 900;
+    line-height: 4rem;
+    color: var(--Blanco);
+}
+
+@media only screen and (min-width: 1200px) {
+    .ProdA {
+        background-position: bottom center;
+        padding-left: calc(10rem + 2vw);
+    }
+
+    .ProdA h2 {
+        font-size: calc(3.5rem + 2.5vw);
+        line-height: calc(4.5rem + 1vw);
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .ProdA {
+        height: 50vh;
+    }
+}
+
+/* -------------------- Contenido -------------------- */
+
+.ProdB {
+    width: 100%;
+    margin: auto;
+    padding: calc(1.5rem + 2vw) calc(1.5rem + 2vw) 0;
+}
+
+.ProdB h3 {
+    /* padding-left: calc(1rem + 3vw); */
+    padding-bottom: calc(1rem + .5vw);
+    text-align: center;
+    font-family: "Fuente1";
+    font-size: calc(2.5rem + 1.5vw);
+    font-weight: 900;
+    color: var(--Amarillo1);
+}
+
+@media only screen and (min-width: 800px) {
+    .ProdB {
+        padding: calc(1.5rem + 2vw) calc(2.5rem + 2vw) 0;
+    }
+}
+
+/* -------------------- Tarjetas -------------------- */
+
+.ProdB1 {
+    display: grid;
+    gap: calc(10px + 1vw);
+}
+
+.ProdB2 {
+    display: grid;
+
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: calc(1rem + 1vw);
+
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ProdB5 {
+    display: none;
+}
+
+.ProdB4 h4, .ProdB5 h4 {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Fuente1";
+    font-size: calc(2rem + .8vw);
+    font-weight: 900;
+    line-height: calc(2rem + .5vw);
+}
+
+.ProdB3 {
+    display: grid;
+}
+
+.ProdB3 img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.ProdB7 h5, .ProdB6 h5 {
+    padding-top: .5rem;
+}
+
+.ProdB7 p, .ProdB6 p {
+    padding-left: calc(.5rem + 1vw);
+    font-size: large;
+}
+
+.ProdB8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding-top: calc(.5rem + .5vw);
+}
+
+.ProdB8 a h6 {
+    width: fit-content;
+    padding: .3rem calc(1.5rem + 1vw);
+    color: var(--Blanco);
+}
+
+@media only screen and (min-width: 600px) {
+    .ProdB1 {
+        grid-template-columns: 5fr 5fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .ProdB1 {
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .ProdB1 {
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .ProdB2 {
+        max-width: max-content;
+    }
+
+    .ProdB3 {
+        grid-template-columns: 4fr 6fr;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ProdB5 {
+        display: block;
+    }
+
+    .ProdB5 h5 {
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+
+    .ProdB5 p {
+        padding-left: 3rem;
+    }
+
+    .ProdB4, .ProdB6 {
+        display: none;
+    }
+
+    .ProdB7 {
+        padding-top: .5rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .ProdB1 {
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+}
+
+
+/*TODO -------------------- Cambios -------------------- */
+
+#fruta {
+    background-image: url(/public/imagenes/fondos/LaCocinita.fruta.webp);
+}
+
+#fruta h2 {
+    text-shadow: 2px 3px 4px #dfae00;
+}
+
+#tarjetaMermeladas {
+    background-color: #ffd7478e;
+    border-radius: 20px;
+}
+
+#tarjetaMermeladasTexto {
+    color: var(--Amarillo3);
+}
+
+#tarjetaMermeladasBoton {
+    background-color: var(--Amarillo2);
+    border-radius: 10px;
+}
+
+#tarjetaMermeladasBoton:hover {
+    background-color: var(--Amarillo3);
+}
+
+#mojo {
+    background-image: url(/public/imagenes/fondos/LaCocinita.mojo.webp);
+}
+
+#mojo h2 {
+    text-shadow: 2px 3px 4px #418834;
+}
+
+#gofio {
+    background-image: url(/public/imagenes/fondos/LaCocinita.gofio.webp);
+}
+
+#gofio h2 {
+    text-shadow: 2px 3px 4px #dd6306;
+}
+
+/* -------------------- Padding bottom -------------------- */
+
+.ProdZ {
+    padding-top: calc(1rem + 1vw) !important;
+
+}
