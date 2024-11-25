@@ -1,0 +1,275 @@
+/* -------------------- Colores -------------------- */
+
+:root {
+    --Negro: #000000;
+    --Gris: #343632;
+    --Blanco: #fff;
+    --Verde1: #7ad16a;
+    --Verde2: #61BB51;
+    --Verde3: #53a345;
+    --Amarillo1: #ffd747;
+    --Amarillo2: #FFC800;
+    --Amarillo3: #f1bd00;
+    --Naranja1: #fa8e3c;
+    --Naranja2: #FF8427;
+    --Naranja3: #ff770e;
+}
+
+/* -------------------- Cabecera -------------------- */
+.HomeA {
+    background-image: url(/public/imagenes/fondos/LaCocinita.home.webp);
+    background-position: 60% ;
+    background-size: cover;
+
+    display: grid;
+    align-items: center;
+
+    height: 50vh;
+    width: 100%;
+}
+
+.HomeA1 {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: calc(2rem + 3vw);
+}
+
+.HomeA1 img {
+    width: 100%;
+    max-width: 700px;
+    object-fit: contain;
+}
+
+@media only screen and (min-width: 550px) {
+    .HomeA {
+        height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .HomeA {
+        background-position: bottom center;
+        height: 70vh;
+    }
+}
+
+/* -------------------- Productos -------------------- */
+.HomeB {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: calc(2rem + 2vw);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.HomeB1 {
+    background-position: right;
+    background-size: cover;
+
+    flex: 1 1 30%;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-width: 250px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: calc(2rem + 1vw) calc(1.5rem + 1vw);
+
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#fruta {
+    background-image: url(/public/imagenes/fondos/LaCocinita.fruta.webp);
+}
+#mojo {
+    background-image: url(/public/imagenes/fondos/LaCocinita.mojo.webp);
+}
+#gofio {
+    background-image: url(/public/imagenes/fondos/LaCocinita.gofio.webp);
+}
+
+.HomeB1 h3 {
+    font-size: x-large;
+    font-weight: 600;
+    color: var(--Blanco);
+    text-shadow: 3px 2px 4px #00000093;
+}
+
+.HomeB1:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .HomeB {
+        gap: 30px;
+    }
+
+    .HomeB1 h3 {
+        font-size: xx-large;
+    }
+}
+
+/* -------------------- Presentación -------------------- */
+
+.HomeC {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 calc(2rem + 2vw) calc(2rem + 2vw);
+
+    text-align: center;
+}
+
+.HomeC h2 {
+    padding-bottom: .5rem;
+    font-family: "Fuente1";
+    font-size: calc(2.5rem + 1.5vw);
+    color: var(--Verde2);
+}
+
+.HomeC p {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-size: large;
+    color: var(--Gris);
+}
+
+.HomeC1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.HomeC1A {
+    flex: 1 1 20%;
+
+    width: fit-content;
+    min-width: 180px;
+    padding-top: calc(1.5rem + 1vw);
+    margin: auto;
+
+    color: var(--Verde2);
+}
+
+.HomeC1A i {
+    font-size: calc(3rem + 2vw);
+}
+
+.HomeC1A h3 {
+    font-size: large;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1200px) {
+    .HomeC p, .HomeC1A h3 {
+        font-size: larger;
+    }
+}
+
+/* -------------------- Empresas -------------------- */
+.HomeD {
+    background-image: url(/public/imagenes/fondos/LaCocinita.fondo1.webp);
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    padding: calc(1.5rem + 1vw) calc(2rem + 2vw);
+
+    text-align: center;
+}
+
+.HomeD h2 {
+    padding-bottom: .5rem;
+    font-family: "Fuente1";
+    font-size: calc(2.5rem + 1.5vw);
+    color: var(--Blanco);
+}
+
+.HomeD p {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: .3rem;
+    font-size: large;
+    font-weight: 600;
+    color: var(--Blanco);
+}
+
+.HomeD p a:hover {
+    color: var(--Amarillo2);
+}
+
+@media only screen and (min-width: 1200px) {
+    .HomeD p {
+        font-size: larger;
+    }
+}
+
+/* -------------------- Puntos de venta -------------------- */
+
+.HomeE {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: calc(2rem + 2vw);
+}
+
+.HomeE img {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    object-fit: contain;
+}
+
+.HomeE h2 {
+    padding-bottom: .5rem;
+    font-family: "Fuente1";
+    font-size: calc(2.5rem + 1.5vw);
+    color: var(--Verde2);
+}
+
+.HomeE p, .HomeE ul li {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: .3rem;
+    font-size: large;
+    color: var(--Gris);
+}
+
+.HomeE ul {
+    padding: calc(.5rem + 1vw);
+}
+
+.HomeE ul li span {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 800px) {
+    .HomeE {
+        grid-template-columns: 5fr 5fr;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .HomeE p, .HomeE ul li {
+        font-size: larger;
+    }
+}
