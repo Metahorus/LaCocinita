@@ -7,7 +7,7 @@ return [
     'prod_02' => 'Allergene',
     'prod_03' => 'Zutaten',
     
-    'prod_0' => '',
-    'prod_0' => '',
-    'prod_0' => '',
+    'prod_04' => 'Sulfite',
+    'prod_05' => 'Milchprodukte',
+    'prod_06' => 'Mandeln',
 ];

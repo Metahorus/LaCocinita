@@ -69,13 +69,11 @@
 }
 
 .ProdB h3 {
-    /* padding-left: calc(1rem + 3vw); */
     padding-bottom: calc(1rem + .5vw);
     text-align: center;
     font-family: "Fuente1";
     font-size: calc(2.5rem + 1.5vw);
     font-weight: 900;
-    color: var(--Amarillo1);
 }
 
 @media only screen and (min-width: 800px) {
@@ -170,7 +168,7 @@
     }
 
     .ProdB2 {
-        max-width: max-content;
+        max-width: 100%;
     }
 
     .ProdB3 {
@@ -218,6 +216,10 @@
     text-shadow: 2px 3px 4px #dfae00;
 }
 
+#mermeladas h3, #zumos h3, #concentrados h3 {
+    color: var(--Amarillo2);
+}
+
 #tarjetaMermeladas {
     background-color: #ffd7478e;
     border-radius: 20px;
@@ -244,12 +246,52 @@
     text-shadow: 2px 3px 4px #418834;
 }
 
+#mojos h3, #salsas h3 {
+    color: var(--Verde2);
+}
+
+#tarjetaMojos {
+    background-color: #7ad16a8e;
+    border-radius: 20px;
+}
+
+#tarjetaMojosTexto {
+    color: var(--Verde3);
+}
+
+#tarjetaMojosBoton {
+    background-color: var(--Verde2);
+    border-radius: 10px;
+}
+
+#tarjetaMojosBoton:hover {
+    background-color: var(--Verde3);
+}
+
 #gofio {
     background-image: url(/public/imagenes/fondos/LaCocinita.gofio.webp);
 }
 
 #gofio h2 {
     text-shadow: 2px 3px 4px #dd6306;
+}
+
+#tarjetaGofio {
+    background-color: #fa8e3c8e;
+    border-radius: 20px;
+}
+
+#tarjetaGofioTexto {
+    color: var(--Naranja3);
+}
+
+#tarjetaGofioBoton {
+    background-color: var(--Naranja2);
+    border-radius: 10px;
+}
+
+#tarjetaGofioBoton:hover {
+    background-color: var(--Naranja3);
 }
 
 /* -------------------- Padding bottom -------------------- */
