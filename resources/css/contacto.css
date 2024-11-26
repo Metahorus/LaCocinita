@@ -1,0 +1,115 @@
+/* -------------------- Colores -------------------- */
+
+:root {
+    --Negro: #000000;
+    --Gris: #343632;
+    --Blanco: #fff;
+    --Verde1: #7ad16a;
+    --Verde2: #61BB51;
+    --Verde3: #53a345;
+    --Amarillo1: #ffd747;
+    --Amarillo2: #FFC800;
+    --Amarillo3: #f1bd00;
+    --Naranja1: #fa8e3c;
+    --Naranja2: #FF8427;
+    --Naranja3: #ff770e;
+}
+
+/* -------------------- Fondo -------------------- */
+
+.Contacto {
+    background-image: url(/public/imagenes/fondos/LaCocinita.contacto.webp);
+    background-position: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ContactoA {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 calc(2rem + 2vw) calc(2rem + 2vw);
+}
+
+@media only screen and (min-width: 800px) {
+    .Contacto {
+        background-position: center;
+    }
+}
+
+/* -------------------- Titulo -------------------- */
+
+.ContactoA h2 {
+    font-family: "Fuente1";
+    font-size: calc(2.5rem + 1.5vw);
+    font-weight: 900;
+    color: var(--Gris);
+}
+
+/* -------------------- Formulario -------------------- */
+.ContactoB {
+    width: 100%;
+    max-width: 700px;
+    padding: calc(1.5rem + 1vw);
+
+    border-radius: 20px;
+    background-color: #ffffffb4;
+    backdrop-filter: blur(5px);
+}
+
+.ContactoC {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactoC label {
+    padding-bottom: .3rem;
+    font-family: "Fuente2";
+    font-size: large;
+    font-weight: 600;
+    color: var(--Gris);
+}
+
+.ContactoC input, .ContactoC textarea {
+    margin-bottom: calc(.5rem + 1vw);
+    padding: .3rem;
+    border: solid 1px #969696;
+    border-radius: 10px;
+}
+
+.ContactoD button {
+    padding: .3rem 1.5rem;
+
+    font-family: "Fuente2";
+    font-weight: 800;
+
+    background-color: var(--Amarillo2);
+    border-radius: 10px;
+    color: var(--Blanco);
+}
+
+.ContactoD button:hover {
+    background-color: var(--Amarillo3);
+}
+
+.ContactoE {
+    padding-top: 1rem;
+}
+
+.ContactoE h4 {
+    font-size: large;
+    font-weight: 800;
+    color: var(--Naranja3);
+}
+
+/* -------------------- Contacto -------------------- */
+
+.ContactoF {
+    padding-top: 1.5rem;
+    color: var(--Gris);
+}
+
+.ContactoF ul li {
+    padding-left: calc(.5rem + 1vw);
+    overflow-wrap: break-word;
+}

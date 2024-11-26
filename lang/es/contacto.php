@@ -12,4 +12,8 @@ return [
     'cont_07' => 'Política de Privacidad',
     'cont_08' => 'Enviar',
     
+    'cont_09' => 'También pueden contactar con nosotros a través de',
+    'cont_10' => 'Teléfono y whatsapp',
+    'cont_11' => 'Correo electrónico',
+    'cont_12' => 'Redes sociales',
 ];

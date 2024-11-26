@@ -4,6 +4,7 @@
 @import 'layout.css'; /* CSS navbar y footer */
 @import 'home.css'; 
 @import 'productos.css'; 
+@import 'contacto.css'; 
 
 
 /* -------------------- Flaticon - Uicons -------------------- */
@@ -85,7 +86,7 @@ body {
 }
 
 input[type="checkbox"]:checked {
-    background-color: var(--) !important;
+    background-color: var(--Verde2) !important;
 }
 
 /* -------------------- Tipografía -------------------- */
