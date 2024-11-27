@@ -300,3 +300,66 @@
     padding-top: calc(1rem + 1vw) !important;
 
 }
+
+/*! -------------------- Gofio -------------------- */
+
+.GofioA {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: calc(2rem + 2vw);
+
+    display: grid;
+    gap: 20px;
+}
+
+
+.GofioB h3 {
+    text-align: center;
+    font-family: "Fuente1";
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 900;
+    color: var(--Naranja3);
+}
+
+.GofioB h4 {
+    padding-bottom: .5rem;
+    font-family: "Fuente2";
+    font-size: x-large;
+    font-weight: 900;
+    color: var(--Naranja1);
+}
+
+.GofioB h5 {
+    padding-top: .5rem;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: var(--Naranja2);
+}
+
+.GofioB p {
+    padding: .5rem 0;
+    font-size: large;
+    color: var(--Gris);
+}
+
+.GofioC {
+    height: fit-content !important;
+}
+
+@media only screen and (min-width: 900px) {
+    .GofioA {
+        grid-template-columns: 5fr 5fr;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .GofioB h3 {
+        text-align: left;
+    }
+
+    .GofioB p {
+        font-size: larger;
+    }
+}
