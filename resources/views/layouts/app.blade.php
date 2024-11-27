@@ -78,8 +78,8 @@
           {{-- <a href="{{ route('mojos') }}#salsas"><h3>{{ __('Salsas') }}</h3></a> --}}
 
         <a href="{{ route('gofio') }}"><h2 class="pt-2">{{ __('Pella de gofio') }}</h2></a>
-        <a href="{{ route('pedidos') }}"><h2 class="pt-2">{{ __('Pedidos') }}</h2></a>
-        <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a>
+        {{-- <a href="{{ route('pedidos') }}"><h2 class="pt-2">{{ __('Pedidos') }}</h2></a> --}}
+        {{-- <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a> --}}
         <a href="{{ route('contacto') }}"><h2>{{ __('Contacto') }}</h2></a>
 
         <div x-data="{ open: false }">
@@ -156,8 +156,8 @@
             </div>
           </div>
 
-          <a href="{{ route('pedidos') }}"><h2>{{ __('Pedidos') }}</h2></a>
-          <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a>
+          {{-- <a href="{{ route('pedidos') }}"><h2>{{ __('Pedidos') }}</h2></a> --}}
+          {{-- <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a> --}}
           <a href="{{ route('contacto') }}"><h2>{{ __('Contacto') }}</h2></a>
 
           <div x-data="{ open: false }" class="NavBarPcEnlaces NavBarPcIdiomas">
@@ -260,8 +260,8 @@
           </div>
 
           <div class="FooterB1">
-            <a href="{{ route('pedidos') }}"><h3>{{ __('Pedidos') }}</h3></a>
-            <a href="{{ route('encargos') }}"><h3>{{ __('Encargos y regalos') }}</h3></a>
+            {{-- <a href="{{ route('pedidos') }}"><h3>{{ __('Pedidos') }}</h3></a> --}}
+            {{-- <a href="{{ route('encargos') }}"><h3>{{ __('Encargos y regalos') }}</h3></a> --}}
             <a href="{{ route('contacto') }}"><h3>{{ __('Contacto') }}</h3></a>
           </div>
           
