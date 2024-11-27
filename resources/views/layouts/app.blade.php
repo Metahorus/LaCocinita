@@ -71,7 +71,7 @@
         <a href="{{ route('mermeladas') }}"><h2>{{ __('Mermeladas, zumos y concentrados') }}</h2></a>
           <a href="{{ route('mermeladas') }}#mermeladas"><h3>{{ __('Mermeladas') }}</h3></a>
           <a href="{{ route('mermeladas') }}#zumos"><h3>{{ __('Zumos naturales') }}</h3></a>
-          <a href="{{ route('mermeladas') }}#concentrados"><h3>{{ __('Concentrados') }}</h3></a>
+          <a href="{{ route('mermeladas') }}#vinagres"><h3>{{ __('Vinagres') }}</h3></a>
 
         <a href="{{ route('mojos') }}"><h2 class="pt-2">{{ __('Mojos y salsas') }}</h2></a>
           <a href="{{ route('mojos') }}#mojos"><h3>{{ __('Mojos') }}</h3></a>
@@ -147,7 +147,7 @@
               <a href="{{ route('mermeladas') }}"><h3>{{ __('Mermeladas, zumos y concentrados') }}</h3></a>
                 <a href="{{ route('mermeladas') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mermeladas') }}</h4></a>
                 <a href="{{ route('mermeladas') }}#zumos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Zumos naturales') }}</h4></a>
-                <a href="{{ route('mermeladas') }}#concentrados"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Concentrados') }}</h4></a>
+                <a href="{{ route('mermeladas') }}#vinagres"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Vinagres') }}</h4></a>
 
               <a href="{{ route('mojos') }}"><h3 class="pt-2">{{ __('Mojos y salsas') }}</h3></a>
                 <a href="{{ route('mojos') }}#mojos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mojos') }}</h4></a>
@@ -249,7 +249,7 @@
             <a href="{{ route('mermeladas') }}"><h3>{{ __('Mermeladas, zumos y concentrados') }}</h3></a>
                 <a href="{{ route('mermeladas') }}#mermeladas"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Mermeladas') }}</h4></a>
                 <a href="{{ route('mermeladas') }}#zumos"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Zumos naturales') }}</h4></a>
-                <a href="{{ route('mermeladas') }}#concentrados"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Concentrados') }}</h4></a>
+                <a href="{{ route('mermeladas') }}#vinagres"><h4><i class="fi fi-rr-angle-small-right"></i> {{ __('Vinagres') }}</h4></a>
           </div>
 
           <div class="FooterB1">

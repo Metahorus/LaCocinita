@@ -15,9 +15,6 @@
     --Naranja3: #ff770e;
 }
 
-/* -------------------- General -------------------- */
-
-
 /* -------------------- Cabecera -------------------- */
 
 .ProdA {
@@ -34,7 +31,7 @@
 
 .ProdA h2 {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     font-family: "Fuente1";
     font-size: calc(3.5rem + 1.5vw);
     font-weight: 900;
@@ -51,12 +48,6 @@
     .ProdA h2 {
         font-size: calc(3.5rem + 2.5vw);
         line-height: calc(4.5rem + 1vw);
-    }
-}
-
-@media only screen and (min-width: 1700px) {
-    .ProdA {
-        height: 50vh;
     }
 }
 
@@ -216,7 +207,7 @@
     text-shadow: 2px 3px 4px #dfae00;
 }
 
-#mermeladas h3, #zumos h3, #concentrados h3 {
+#mermeladas h3, #zumos h3, #vinagres h3 {
     color: var(--Amarillo2);
 }
 
@@ -313,6 +304,10 @@
     gap: 20px;
 }
 
+.GofioB {
+    padding-bottom: 1.5rem;
+}
+
 
 .GofioB h3 {
     text-align: center;
@@ -344,17 +339,8 @@
     color: var(--Gris);
 }
 
-.GofioC {
-    height: fit-content !important;
-}
 
 @media only screen and (min-width: 900px) {
-    .GofioA {
-        grid-template-columns: 5fr 5fr;
-        align-items: center;
-        gap: 40px;
-    }
-
     .GofioB h3 {
         text-align: left;
     }

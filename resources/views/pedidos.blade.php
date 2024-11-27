@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    pedidos
+    <div class="Pedidos">
+        hola
+    </div>
 @endsection

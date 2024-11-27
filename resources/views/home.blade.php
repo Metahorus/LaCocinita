@@ -54,7 +54,10 @@
         <p>{{ __('home.home_12') }}</p>
         <p>{{ __('home.home_13') }}</p>
         <ul>
-            <li><span><i class="fi fi-rr-angle-small-right"></i> lorem ipsum</span> lorem ipsum</li>
+            <li><span><i class="fi fi-rr-angle-small-right"></i> {{ __('ferias.fer_01') }} -</span> {{ __('ferias.fer_02') }}</li>
+            <li><span><i class="fi fi-rr-angle-small-right"></i> {{ __('ferias.fer_03') }} -</span> {{ __('ferias.fer_04') }}</li>
+            <li><span><i class="fi fi-rr-angle-small-right"></i> {{ __('ferias.fer_05') }} -</span> {{ __('ferias.fer_06') }}</li>
+            <li><span><i class="fi fi-rr-angle-small-right"></i> {{ __('ferias.fer_07') }} -</span> {{ __('ferias.fer_08') }}</li>
         </ul>
     </div>
 

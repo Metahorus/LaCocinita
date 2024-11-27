@@ -338,13 +338,15 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_01') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 5€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 212mL - 3€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 7€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 5€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 212mL - 3€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 7€</p>
             </div>
 
             <div class="ProdB7">
@@ -371,13 +373,15 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_02') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 5€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 212mL - 3€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 7€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 5€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 212mL - 3€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 7€</p>
             </div>
 
             <div class="ProdB7">
@@ -393,13 +397,42 @@
                 <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
             </div> --}}
         </div>
-    </div>
-</div>
 
-<div class="ProdB" id="concentrados">
-    <h3>{{ __('Concentrados') }}</h3>
+        <div class="ProdB2" id="tarjetaMermeladas">
+            <div class="ProdB3">
+                <div class="ProdB4">
+                    <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_06') }}</h4>
+                </div>
+                <img src="{{ asset('imagenes/productos/zumos/Concentrado.Tuno.webp') }}" alt="{{ __('zumosyconcentrados.zum_06') }}">
+                <div class="ProdB5">
+                    <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_06') }}</h4>
 
-    <div class="ProdB1" >
+                    <h5>{{ __('productos.prod_01') }}:</h5>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 2.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 12€</p>
+                </div>
+            </div>
+
+            <div class="ProdB6">
+                <h5>{{ __('productos.prod_01') }}:</h5>
+                <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 2.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 12€</p>
+            </div>
+
+            <div class="ProdB7">
+                {{-- <h5><i class="fi fi-sr-diamond-exclamation"></i> {{ __('productos.prod_02') }}:</h5>
+                <p>Lorem, ipsum dolor.</p> --}}
+
+                <h5>{{ __('productos.prod_03') }}:</h5>
+                <p>{{ __('zumosyconcentrados.zum_060') }}</p>
+            </div>
+
+            {{-- <div class="ProdB8">
+                <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
+                <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
+            </div> --}}
+        </div>
+
         <div class="ProdB2" id="tarjetaMermeladas">
             <div class="ProdB3">
                 <div class="ProdB4">
@@ -410,13 +443,15 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_03') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 10€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 2.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 12€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 10€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 2.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 500mL - 12€</p>
             </div>
 
             <div class="ProdB7">
@@ -425,6 +460,78 @@
 
                 <h5>{{ __('productos.prod_03') }}:</h5>
                 <p>{{ __('zumosyconcentrados.zum_030') }}</p>
+            </div>
+
+            {{-- <div class="ProdB8">
+                <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
+                <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
+            </div> --}}
+        </div>
+    </div>
+</div>
+
+<div class="ProdB" id="vinagres">
+    <h3>{{ __('Vinagres') }}</h3>
+
+    <div class="ProdB1" >
+        <div class="ProdB2" id="tarjetaMermeladas">
+            <div class="ProdB3">
+                <div class="ProdB4">
+                    <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_04') }}</h4>
+                </div>
+                <img src="{{ asset('imagenes/productos/zumos/Vin.Tuno.webp') }}" alt="{{ __('zumosyconcentrados.zum_04') }}">
+                <div class="ProdB5">
+                    <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_04') }}</h4>
+
+                    <h5>{{ __('productos.prod_01') }}:</h5>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 3€</p>
+                </div>
+            </div>
+
+            <div class="ProdB6">
+                <h5>{{ __('productos.prod_01') }}:</h5>
+                <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 3€</p>
+            </div>
+
+            <div class="ProdB7">
+                <h5><i class="fi fi-sr-diamond-exclamation"></i> {{ __('productos.prod_02') }}:</h5>
+                <p>{{ __('zumosyconcentrados.zum_041') }}</p>
+
+                <h5>{{ __('productos.prod_03') }}:</h5>
+                <p>{{ __('zumosyconcentrados.zum_040') }}</p>
+            </div>
+
+            {{-- <div class="ProdB8">
+                <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
+                <a href=""><h6 id="tarjetaMermeladasBoton">{{ __('productos.prod_01') }}</h6></a>
+            </div> --}}
+        </div>
+
+        <div class="ProdB2" id="tarjetaMermeladas">
+            <div class="ProdB3">
+                <div class="ProdB4">
+                    <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_05') }}</h4>
+                </div>
+                <img src="{{ asset('imagenes/productos/zumos/Vin.Mar.webp') }}" alt="{{ __('zumosyconcentrados.zum_05') }}">
+                <div class="ProdB5">
+                    <h4 id="tarjetaMermeladasTexto">{{ __('zumosyconcentrados.zum_05') }}</h4>
+
+                    <h5>{{ __('productos.prod_01') }}:</h5>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 3€</p>
+                </div>
+            </div>
+
+            <div class="ProdB6">
+                <h5>{{ __('productos.prod_01') }}:</h5>
+                <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 3€</p>
+            </div>
+
+            <div class="ProdB7">
+                <h5><i class="fi fi-sr-diamond-exclamation"></i> {{ __('productos.prod_02') }}:</h5>
+                <p>{{ __('zumosyconcentrados.zum_051') }}</p>
+
+                <h5>{{ __('productos.prod_03') }}:</h5>
+                <p>{{ __('zumosyconcentrados.zum_050') }}</p>
             </div>
 
             {{-- <div class="ProdB8">
