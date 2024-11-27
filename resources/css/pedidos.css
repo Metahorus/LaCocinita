@@ -16,3 +16,129 @@
 }
 
 /* -------------------- Cabecera -------------------- */
+
+.PedidosA {
+    background-image: url(/public/imagenes/fondos/LaCocinita.pedidos.webp);
+    background-position: bottom 70% right ;
+    background-size: cover;
+
+    display: grid;
+    align-items: center;
+
+    height: 60vh;
+    width: 100%;
+    padding: calc(3rem + 2vw);
+    padding-bottom: 0;
+}
+
+.PedidosA h2 {
+    width: 100%;
+    max-width: 900px;
+    font-family: "Fuente1";
+    font-size: calc(3.5rem + 1.5vw);
+    font-weight: 900;
+    line-height: 4rem;
+    color: var(--Blanco);
+    text-shadow: 2px 3px 4px #06577780;
+}
+
+@media only screen and (min-width: 1200px) {
+    .PedidosA {
+        background-position: center;
+        padding-left: calc(14rem + 10vw);
+    }
+
+    .PedidosA h2 {
+        font-size: calc(3.5rem + 2.5vw);
+        line-height: calc(4.5rem + 1vw);
+    }
+}
+
+.PedidosB {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: calc(1rem + 1vw) calc(2rem + 2vw);
+
+    display: grid;
+    gap: 2rem;
+}
+
+.PedidosC h3 {
+    text-align: center;
+    font-family: "Fuente1";
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 900;
+    color: var(--Amarillo3);
+}
+
+.PedidosC h4 {
+    padding-bottom: .5rem;
+    font-family: "Fuente2";
+    font-size: x-large;
+    font-weight: 900;
+    color: var(--Amarillo1);
+}
+
+.PedidosC h5 {
+    padding-top: .5rem;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: var(--Amarillo2);
+}
+
+.PedidosC p {
+    padding: .5rem 0;
+    font-size: large;
+    color: var(--Gris);
+}
+
+.PedidosD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+    padding-top: 1.5rem;
+    
+    text-align: center;
+}
+
+.PedidosD a h4 {
+    padding: .3rem 1.5rem;
+
+    font-size: large !important;
+
+    background-color: var(--Amarillo2);
+    color: var(--Blanco);
+    border-radius: 20px;
+}
+
+.PedidosD a h4:hover {
+    background-color: var(--Amarillo1);
+}
+
+.PedidosD img {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    object-fit: contain;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .PedidosB {
+        grid-template-columns: 5fr 5fr;
+        gap: 3rem;
+    }
+
+    .PedidosC h3 {
+        text-align: left;
+    }
+
+    .PedidosC p {
+        font-size: larger;
+    }
+}

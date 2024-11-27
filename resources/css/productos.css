@@ -27,6 +27,7 @@
     height: 60vh;
     width: 100%;
     padding: calc(3rem + 2vw);
+    padding-bottom: 0;
 }
 
 .ProdA h2 {
