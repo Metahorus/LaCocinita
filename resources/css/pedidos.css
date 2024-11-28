@@ -43,8 +43,9 @@
     max-width: 900px;
     font-family: "Fuente1";
     font-size: calc(3.5rem + 1.5vw);
+    line-height: calc(3rem + .5vw);
     font-weight: 900;
-    line-height: 4rem;
+    /* line-height: 4rem; */
     color: var(--Blanco);
 }
 
@@ -87,10 +88,12 @@
 }
 
 .PedidosC h3, .EvC h3 {
+    padding-bottom: .5rem;
     text-align: center;
     font-family: "Fuente1";
     font-size: calc(2rem + 1.5vw);
     font-weight: 900;
+    line-height: calc(2rem + .5vw);
 }
 
 .PedidosC h4, .EvC h4 {
