@@ -208,6 +208,10 @@
     font-weight: 600;
     color: var(--Blanco);
 }
+.HomeD p a {
+    overflow-wrap: break-word;
+    color: var(--Amarillo1);
+}
 
 .HomeD p a:hover {
     color: var(--Amarillo2);
@@ -241,6 +245,7 @@
 
 .HomeE h2 {
     padding-bottom: .5rem;
+    text-align: center;
     font-family: "Fuente1";
     font-size: calc(2.5rem + 1.5vw);
     font-weight: 900;
@@ -268,6 +273,10 @@
     .HomeE {
         grid-template-columns: 5fr 5fr;
         align-items: center;
+    }
+
+    .HomeE h2 {
+        text-align: left;
     }
 }
 

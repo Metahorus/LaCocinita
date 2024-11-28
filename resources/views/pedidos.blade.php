@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="PedidosA">
+<div class="PedidosA" id="PedA">
     <h2>{{ __('pedidos.ped_01') }}</h2>
 </div>
 
 <div class="PedidosB">
-    <div class="PedidosC">
+    <div class="PedidosC" id="PedC">
         <h3>{!! __('pedidos.ped_02') !!}</h3>
         <h4>{!! __('pedidos.ped_03') !!}</h4>
     

@@ -17,21 +17,28 @@
 
 /* -------------------- Cabecera -------------------- */
 
-.PedidosA {
-    background-image: url(/public/imagenes/fondos/LaCocinita.pedidos.webp);
+.PedidosA, .EvA { /* ? Eventos */
     background-position: bottom 70% right ;
     background-size: cover;
-
+    
     display: grid;
     align-items: center;
-
+    
     height: 60vh;
     width: 100%;
     padding: calc(3rem + 2vw);
     padding-bottom: 0;
 }
 
-.PedidosA h2 {
+#PedA {
+    background-image: url(/public/imagenes/fondos/LaCocinita.pedidos.webp);
+}
+
+#EvA {
+    background-image: url(/public/imagenes/fondos/LaCocinita.eventos.webp);
+}
+
+.PedidosA h2, .EvA h2 { /* ? Eventos */
     width: 100%;
     max-width: 900px;
     font-family: "Fuente1";
@@ -39,60 +46,96 @@
     font-weight: 900;
     line-height: 4rem;
     color: var(--Blanco);
+}
+
+#PedA h2 {
     text-shadow: 2px 3px 4px #06577780;
 }
 
+#EvA h2 {
+    text-shadow: 2px 3px 4px #000000be;
+}
+
 @media only screen and (min-width: 1200px) {
-    .PedidosA {
+    .PedidosA, .EvA { /* ? Eventos */
         background-position: center;
         padding-left: calc(14rem + 10vw);
     }
 
-    .PedidosA h2 {
+    .PedidosA h2, .EvA h2 { /* ? Eventos */
         font-size: calc(3.5rem + 2.5vw);
         line-height: calc(4.5rem + 1vw);
     }
 }
 
-.PedidosB {
+.PedidosB, .EvB {
     width: 100%;
     max-width: 1500px;
     margin: auto;
     padding: calc(1rem + 1vw) calc(2rem + 2vw);
+}
 
+.PedidosB {
     display: grid;
     gap: 2rem;
 }
 
-.PedidosC h3 {
+.EvB {
+    
+}
+
+.PedidosC h3, .EvC h3 {
     text-align: center;
     font-family: "Fuente1";
     font-size: calc(2rem + 1.5vw);
     font-weight: 900;
-    color: var(--Amarillo3);
 }
 
-.PedidosC h4 {
+.PedidosC h4, .EvC h4 {
     padding-bottom: .5rem;
     font-family: "Fuente2";
     font-size: x-large;
     font-weight: 900;
-    color: var(--Amarillo1);
 }
 
-.PedidosC h5 {
+.PedidosC h5, .EvC h5 {
     padding-top: .5rem;
     text-align: center;
     font-size: larger;
     font-weight: 600;
-    color: var(--Amarillo2);
 }
 
-.PedidosC p {
+.PedidosC p, .EvC p {
     padding: .5rem 0;
     font-size: large;
     color: var(--Gris);
 }
+
+#PedC h3 {
+    color: var(--Amarillo3);
+}
+
+#PedC h4 {
+    color: var(--Amarillo1);
+}
+
+#PedC h5 {
+    color: var(--Amarillo2);
+}
+
+
+#EvC h3 {
+    color: var(--Verde3);
+}
+
+#EvC h4 {
+    color: var(--Verde1);
+}
+
+#EvC h5 {
+    color: var(--Verde2);
+}
+
 
 .PedidosD {
     display: flex;
@@ -112,7 +155,7 @@
     font-size: large !important;
 
     background-color: var(--Amarillo2);
-    color: var(--Blanco);
+    color: var(--Blanco)!important;
     border-radius: 20px;
 }
 
@@ -129,16 +172,16 @@
 
 
 @media only screen and (min-width: 900px) {
-    .PedidosB {
+    .PedidosB, .EvB {
         grid-template-columns: 5fr 5fr;
         gap: 3rem;
     }
 
-    .PedidosC h3 {
+    .PedidosC h3, .EvC h3 {
         text-align: left;
     }
 
-    .PedidosC p {
+    .PedidosC p, .EvC p {
         font-size: larger;
     }
 }
