@@ -79,8 +79,8 @@
 
         <a href="{{ route('gofio') }}"><h2 class="pt-2">{{ __('Pella de gofio') }}</h2></a>
         <a href="{{ route('pedidos') }}"><h2 class="pt-2">{{ __('Pedidos') }}</h2></a>
-        <a href="{{ route('encargos') }}"><h2>{{ __('Encargos y regalos') }}</h2></a>
-        <a href="{{ route('contacto') }}"><h2>{{ __('Contacto') }}</h2></a>
+        <a href="{{ route('encargos') }}"><h2 class="pt-2">{{ __('Encargos y regalos') }}</h2></a>
+        <a href="{{ route('contacto') }}"><h2 class="pt-2">{{ __('Contacto') }}</h2></a>
 
         <div x-data="{ open: false }">
           <h2 x-on:click="open = ! open" class="NavBarMovilIdiomas">
