@@ -49,7 +49,7 @@
                 <div class="ProdB4">
                     <h4 id="tarjetaMojosTexto">{{ __('mojos.mojo_02') }}</h4>
                 </div>
-                <img src="{{ asset('imagenes/productos/mojos/Mojo.Picante.webp') }}" alt="{{ __('mojos.mojo_02') }}">
+                <img src="{{ asset('imagenes/productos/mojos/Mojo.Picante1.webp') }}" alt="{{ __('mojos.mojo_02') }}">
                 <div class="ProdB5">
                     <h4 id="tarjetaMojosTexto">{{ __('mojos.mojo_02') }}</h4>
 
@@ -198,15 +198,15 @@
                     <h4 id="tarjetaMojosTexto">{{ __('mojos.mojo_06') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 4€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250mL - 5€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 4.5€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250mL - 5.5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 4€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250mL - 5€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 100mL - 4.5€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250mL - 5.5€</p>
             </div>
 
             <div class="ProdB7">

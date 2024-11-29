@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 return [
-    'gofio_01' => 'Pella de gofio',
+    'gofio_01' => 'Pella de gofio de trigo y millo',
     'gofio_02' => 'Almendra, gluten',
-    'gofio_03' => 'Gofio, miel de abejas, almendras',
+    'gofio_03' => 'Gofio de trigo y millo, miel de abejas, almendras',
 
     'gofio_04' => 'Pellas de gofio artesanales',
     'gofio_05' => 'El auténtico sabor de Canarias',
@@ -21,4 +21,8 @@ return [
     'gofio_11' => 'Pella de gofio con cacao',
     'gofio_110' => 'Gofio de millo, trigo y cebada, miel de abejas, cacao, azúcar, almendras, sal',
     'gofio_111' => 'Almendra, gluten',
+
+    'gofio_12' => 'Pella de gofio de millo',
+    'gofio_120' => 'Almendra',
+    'gofio_121' => 'Gofio de millo, miel de abejas, almendras',
 ];

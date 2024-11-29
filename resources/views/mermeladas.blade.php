@@ -22,7 +22,7 @@
                     <h5>{{ __('productos.prod_01') }}:</h5>
                     <p><i class="fi fi-tr-angle-small-right"></i> 30mL - 2.50€</p>
                     <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
                 <h5>{{ __('productos.prod_01') }}:</h5>
                 <p><i class="fi fi-tr-angle-small-right"></i> 30mL - 2.50€</p>
                 <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -58,14 +58,14 @@
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
                     <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
                 <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -94,7 +94,7 @@
                     <h5>{{ __('productos.prod_01') }}:</h5>
                     <p><i class="fi fi-tr-angle-small-right"></i> 30mL - 2.50€</p>
                     <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                 <h5>{{ __('productos.prod_01') }}:</h5>
                 <p><i class="fi fi-tr-angle-small-right"></i> 30mL - 2.50€</p>
                 <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -130,14 +130,14 @@
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
                     <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
                 <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -165,14 +165,14 @@
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
                     <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
                 <p><i class="fi fi-tr-angle-small-right"></i> 100gr - 3.50€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -199,13 +199,13 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('mermeladas.merm_06') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -232,13 +232,13 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('mermeladas.merm_07') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -265,13 +265,13 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('mermeladas.merm_08') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
@@ -298,13 +298,13 @@
                     <h4 id="tarjetaMermeladasTexto">{{ __('mermeladas.merm_09') }}</h4>
 
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
                 </div>
             </div>
 
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 5€</p>
             </div>
 
             <div class="ProdB7">
