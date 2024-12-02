@@ -24,7 +24,7 @@
                 <div class="ProdB4">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_01') }}</h4>
                 </div>
-                <img src="{{ asset('imagenes/productos/Gofio.Trigo.webp') }}" alt="{{ __('gofio.gofio_01') }}" class="rounded-2xl">
+                <img src="{{ asset('imagenes/productos/Gofio.Trigo1.webp') }}" alt="{{ __('gofio.gofio_01') }}" class="rounded-2xl">
                 <div class="ProdB5">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_01') }}</h4>
     
@@ -59,7 +59,7 @@
                 <div class="ProdB4">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_12') }}</h4>
                 </div>
-                <img src="{{ asset('imagenes/productos/Gofio.Millo.webp') }}" alt="{{ __('gofio.gofio_12') }}" class="rounded-2xl">
+                <img src="{{ asset('imagenes/productos/Gofio.Millo1.webp') }}" alt="{{ __('gofio.gofio_12') }}" class="rounded-2xl">
                 <div class="ProdB5">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_12') }}</h4>
     
@@ -92,7 +92,7 @@
                 <div class="ProdB4">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_10') }}</h4>
                 </div>
-                <img src="{{ asset('imagenes/productos/Gofio.Pasas.webp') }}" alt="{{ __('gofio.gofio_10') }}" class="rounded-2xl">
+                <img src="{{ asset('imagenes/productos/Gofio.Pasas1.webp') }}" alt="{{ __('gofio.gofio_10') }}" class="rounded-2xl">
                 <div class="ProdB5">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_10') }}</h4>
     
@@ -125,7 +125,7 @@
                 <div class="ProdB4">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_11') }}</h4>
                 </div>
-                <img src="{{ asset('imagenes/productos/Gofio.Cacao.webp') }}" alt="{{ __('gofio.gofio_11') }}" class="rounded-2xl">
+                <img src="{{ asset('imagenes/productos/Gofio.Cacao1.webp') }}" alt="{{ __('gofio.gofio_11') }}" class="rounded-2xl">
                 <div class="ProdB5">
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_11') }}</h4>
     
