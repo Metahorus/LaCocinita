@@ -61,6 +61,7 @@
         </ul>
     </div>
 
-    <img src="{{ asset('imagenes/otros/LaCocinita.papaya.webp') }}" alt="La Cocinita Mermeladas y Mojos">
+    {{-- <img src="{{ asset('imagenes/otros/LaCocinita.papaya.webp') }}" alt="La Cocinita Mermeladas y Mojos"> --}}
+    <img src="{{ asset('imagenes/otros/Navidad.webp') }}" alt="La Cocinita Mermeladas y Mojos">
 </div>
 @endsection
