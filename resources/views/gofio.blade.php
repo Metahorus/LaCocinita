@@ -29,15 +29,15 @@
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_01') }}</h4>
     
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 500gr - 7€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 500gr - 8€</p>
                 </div>
             </div>
     
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
-                <p><i class="fi fi-tr-angle-small-right"></i> 500gr - 7€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 500gr - 8€</p>
             </div>
     
             <div class="ProdB7">
@@ -64,13 +64,13 @@
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_12') }}</h4>
     
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
                 </div>
             </div>
     
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
             </div>
     
             <div class="ProdB7">
@@ -97,13 +97,13 @@
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_10') }}</h4>
     
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
                 </div>
             </div>
     
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
             </div>
     
             <div class="ProdB7">
@@ -130,13 +130,13 @@
                     <h4 id="tarjetaGofioTexto">{{ __('gofio.gofio_11') }}</h4>
     
                     <h5>{{ __('productos.prod_01') }}:</h5>
-                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
+                    <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
                 </div>
             </div>
     
             <div class="ProdB6">
                 <h5>{{ __('productos.prod_01') }}:</h5>
-                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 3.50€</p>
+                <p><i class="fi fi-tr-angle-small-right"></i> 250gr - 4€</p>
             </div>
     
             <div class="ProdB7">
